@@ -21,8 +21,9 @@ GetSecondDigit(832);
 
 void GetThirdDigit(int number)
 {
-    if (number > 99)
+    if ((number > 99) | (number < -99))
     {
+        number = Math.Abs(number);
         System.Console.WriteLine(number.ToString()[2]);
     }
     else
@@ -31,4 +32,4 @@ void GetThirdDigit(int number)
     }
 }
 
-GetThirdDigit(32679);
+GetThirdDigit(-336679);
