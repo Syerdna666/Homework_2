@@ -16,3 +16,19 @@ void GetSecondDigit(int number)
 GetSecondDigit(832);
 
 
+// Task_2
+// Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+
+void GetThirdDigit(int number)
+{
+    if (number > 99)
+    {
+        System.Console.WriteLine(number.ToString()[2]);
+    }
+    else
+    {
+        System.Console.WriteLine("Третьей цифры нет");
+    }
+}
+
+GetThirdDigit(32679);
