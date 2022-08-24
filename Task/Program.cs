@@ -33,3 +33,29 @@ void GetThirdDigit(int number)
 }
 
 GetThirdDigit(-336679);
+
+
+// Task_3
+// Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+void ChekWeekend(int day)
+{
+    if (day > 0 && day <= 7)
+    {
+        if (day == 6 || day == 7)
+        {
+            System.Console.WriteLine("Да");
+        }
+        else
+        {
+            System.Console.WriteLine("Нет");
+        }
+    }
+    else{
+        System.Console.WriteLine("Введите существующий день недели");
+    }
+
+}
+
+ChekWeekend(6);
+
